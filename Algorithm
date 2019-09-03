@@ -1,0 +1,12 @@
+# Margin Problem Algorithm
+
+# User provides .txt file.
+#  Read in file, displaying error if file is not .txt or does not exist
+# Prompt user left margin size, converting from in to pt (input * 12)
+# Prompt user right margin size, converting from in to pt
+# Initialize page width with 144 pt (12 in * 12)
+# Define create_left_margin function with for loop to print appropriate number of spaces using above conversion, aligned to the left
+# Define create_right margin function with for loop to print appropriate number of spaces, aligned to the right (index begins from page_width - right_margin)
+# Open (or create) another file to write result to
+# Use for loop to iterate through file, calling create_left_margin function for left margin,  pulling in 80 characters per line from the file, and calling create_right_margin function for right margin
+# Close file
