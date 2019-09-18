@@ -1,0 +1,10 @@
+Requirements
+* File must exist.
+* File must contain a .txt extension.
+* File must have complete sentences.
+
+Assumptions
+* Text file is in 12 pt font.
+* Text file is not empty.
+* A line of text can be up to 144 pt long.
+* Lines are formatted to be 80 characters.
