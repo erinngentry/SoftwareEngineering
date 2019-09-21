@@ -1,7 +1,8 @@
 # Margin Problem Algorithm
-
+#
+# 
 # User provides .txt file.
-#  Read in file, displaying error if file is not .txt or does not exist
+# Read in file, displaying error if file is not .txt or does not exist
 # Prompt user left margin size, converting from in to pt (input * 12)
 # Prompt user right margin size, converting from in to pt
 # Initialize page width with 144 pt (12 in * 12)

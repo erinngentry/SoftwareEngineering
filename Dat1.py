@@ -45,7 +45,6 @@ words = fileIn.split(' ')
 sentences = fileIn.split('  ')
 while '' in words:
     words.remove('')
-print(words)
 
 count = 0
 for x in sentences:
@@ -82,19 +81,15 @@ def create_right_margin():
 
 h = open('output.txt', 'w+')
 for x in range(0, count, 1):
-    space = page_width - left_margin - right_margin
-    create_left_margin()
-#         line = f.read(char - left_margin - right_margin)        
-    
-    while(len(words[x]) > 0 and len(words[x]) < space and len(words) > 0):
-
-        h.write(words[x])
-        space = space - len(words[x])
-        del words[x]
-
-        if len(words) <= 0:
-            break
-    create_right_margin()
-    h.write('\n')
+	space = char - left_margin - right_margin
+	create_left_margin()
+	while(len(words[x]) > 0 and len(words[x]) < space and len(words) > 0):
+		h.write(words[x] + " ")
+		space = space - len(words[x])
+		del words[x]
+		if len(words) <= 0:
+			break
+	create_right_margin()
+	h.write('\n')
         
 
