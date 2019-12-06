@@ -93,3 +93,4 @@ for x in range(0, count, 1):
 	h.write('\n')
         
 
+f.close()
